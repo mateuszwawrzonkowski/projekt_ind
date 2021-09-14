@@ -1,8 +1,8 @@
 import { Menubar } from "primereact/menubar";
 import { Button } from "primereact/button";
 import { useState } from "react";
-import Modal from "components/Modal";
-import Login from "components/Login";
+import Modal from "../frontend/src/components/Modal";
+import Login from "../frontend/src/components/Login";
 
 export default function UpperMenu() {
   const [login, setLogin] = useState(false);

@@ -1,5 +1,5 @@
 import { PanelMenu } from "primereact/panelmenu";
-import { items } from "data/menuItems";
+import { items } from "../frontend/src/data/menuItems";
 import { useHistory } from "react-router-dom";
 
 export default function Menu() {

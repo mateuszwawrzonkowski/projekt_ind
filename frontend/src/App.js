@@ -1,5 +1,5 @@
 import { ApolloProvider } from "@apollo/client";
-import { useApollo } from "setupApollo";
+import { useApollo } from "../frontend/src/setupApollo";
 import "./App.css";
 import Layout from "./components/Layout";
 import { BrowserRouter as Router } from "react-router-dom";

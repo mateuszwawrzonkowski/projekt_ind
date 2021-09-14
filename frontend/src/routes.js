@@ -1,6 +1,6 @@
-import Contact from "components/Contact";
-import Models from "components/Models";
-import Games from "components/Games";
+import Contact from "../frontend/src/components/Contact";
+import Models from "../frontend/src/components/Models";
+import Games from "../frontend/src/components/Games";
 export const staticRoutes = [
   {
     path: "/contact",

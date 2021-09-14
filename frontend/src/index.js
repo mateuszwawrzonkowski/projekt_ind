@@ -7,7 +7,7 @@ import "primeicons/primeicons.css";
 import "primeflex/primeflex.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { AuthProvider } from "context/context";
+import { AuthProvider } from "../frontend/src/context/context";
 
 ReactDOM.render(
   <React.StrictMode>
