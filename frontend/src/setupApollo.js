@@ -1,9 +1,16 @@
-import { ApolloClient, InMemoryCache } from "@apollo/client";
-import { tabsVar } from "store";
+import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
+import { tabsVar, isLoggedInVar } from "store";
+
+const typeDefs = gql`
+  extend type Query {
+    isLoggedIn: Boolean!
+    cartItems: [ID!]!
+  }
+`;
 
 export const useApollo = () => {
   return new ApolloClient({
-    url: "/graphql",
+    uri: "http://localhost:4000/graphql",
     cache: new InMemoryCache({
       typePolicies: {
         Query: {
@@ -13,9 +20,15 @@ export const useApollo = () => {
                 return tabsVar();
               },
             },
+            isLoggedIn: {
+              read() {
+                return isLoggedInVar();
+              },
+            },
           },
         },
       },
     }),
+    typeDefs,
   });
 };

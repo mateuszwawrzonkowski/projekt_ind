@@ -3,7 +3,7 @@ import { TabView, TabPanel } from "primereact/tabview";
 import { useHistory, useLocation } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 import { GET_TABS } from "store";
-import { staticRoutes } from "../frontend/src/routes";
+import { staticRoutes } from "routes";
 
 export default function TabsAndContent() {
   const tabsResults = useQuery(GET_TABS);

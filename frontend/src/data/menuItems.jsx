@@ -1,4 +1,4 @@
-export const items = (history) => [
+export const items = (history, isLogin) => [
   {
     label: "Modele",
     icon: "pi pi-fw pi-file",
@@ -20,7 +20,7 @@ export const items = (history) => [
       },
     ],
   },
-  {
+  isLogin && {
     label: "Profil",
     icon: "pi pi-fw pi-user",
     items: [
@@ -31,6 +31,7 @@ export const items = (history) => [
       {
         label: "Informacje",
         icon: "pi pi-fw pi-user-minus",
+        command: (e) => history.push("profile"),
       },
     ],
   },

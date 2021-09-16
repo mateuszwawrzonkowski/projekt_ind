@@ -1,6 +1,7 @@
-import Contact from "../frontend/src/components/Contact";
-import Models from "../frontend/src/components/Models";
-import Games from "../frontend/src/components/Games";
+import Contact from "components/Contact";
+import Models from "components/Models";
+import Games from "components/Games";
+import Profile from "components/Profile";
 export const staticRoutes = [
   {
     path: "/contact",
@@ -11,6 +12,11 @@ export const staticRoutes = [
     path: "/models",
     label: "Kontakt",
     component: <Models />,
+  },
+  {
+    path: "/profile",
+    label: "Profil",
+    component: <Profile />,
   },
   {
     path: "/games",

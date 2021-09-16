@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 
 import { Splitter, SplitterPanel } from "primereact/splitter";
-import Menu from "../frontend/src/components/Menu/Menu";
-import UpperMenu from "../frontend/src/components/Menu/UpperMenu";
-import Content from "../frontend/src/components/TabsAndContent";
+import Menu from "components/Menu/Menu";
+import UpperMenu from "components/Menu/UpperMenu";
+import Content from "components/TabsAndContent";
 import { addPath, addTab } from "store";
 import { useLocation } from "react-router-dom";
 

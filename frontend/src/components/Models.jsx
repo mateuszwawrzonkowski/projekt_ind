@@ -1,5 +1,5 @@
-import CardModels from "../frontend/src/components/Card";
-import { modelsItems } from "../frontend/src/data/modelsItems";
+import CardModels from "components/Card";
+import { modelsItems } from "data/modelsItems";
 
 export default function Models() {
   return (
