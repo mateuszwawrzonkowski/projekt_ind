@@ -7,6 +7,7 @@ const GET_USER = gql`
       lastName
       email
       gender
+      type
     }
   }
 `;

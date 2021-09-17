@@ -17,13 +17,15 @@ export default function Register({ setRegisterModalOpen, toast }) {
 
   const [registerUser] = useMutation(REGISTER_USER, {
     onCompleted: (data) => {
-      toast.current.show({
-        severity: "success",
-        summary: "Sukces",
-        detail: "Użytkownik został zarejestrowany",
-        life: 4000,
-      });
-      setRegisterModalOpen(false);
+      if (data) {
+        toast.current.show({
+          severity: "success",
+          summary: "Sukces",
+          detail: "Użytkownik został zarejestrowany",
+          life: 4000,
+        });
+        setRegisterModalOpen(false);
+      }
     },
     onError: (err) => {
       toast.current.show({

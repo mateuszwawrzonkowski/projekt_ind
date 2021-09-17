@@ -11,6 +11,7 @@ export default function Login({ setLoginModalOpen, toast }) {
     mode: "onChange",
   });
   const getUser = useQuery(GET_USER);
+  console.log(getUser);
 
   const [loginUser] = useMutation(LOGIN_USER, {
     onCompleted: (data) => {

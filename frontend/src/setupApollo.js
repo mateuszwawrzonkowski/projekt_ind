@@ -1,5 +1,5 @@
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
-import { tabsVar, isLoggedInVar } from "store";
+import { tabsVar, isLoggedInVar, cartItemsVar } from "store";
 
 const typeDefs = gql`
   extend type Query {
@@ -23,6 +23,11 @@ export const useApollo = () => {
             isLoggedIn: {
               read() {
                 return isLoggedInVar();
+              },
+            },
+            cartItems: {
+              read() {
+                return cartItemsVar();
               },
             },
           },

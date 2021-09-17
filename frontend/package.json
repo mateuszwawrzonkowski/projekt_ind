@@ -7,13 +7,16 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "chart.js": "^3.5.1",
     "graphql": "^15.5.1",
+    "leaflet": "^1.7.1",
     "primeflex": "^2.0.0",
     "primeicons": "^4.1.0",
     "primereact": "^6.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-hook-form": "^6.15.5",
+    "react-leaflet": "^3.2.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-transition-group": "^4.4.2",
@@ -31,16 +34,9 @@
       "react-app/jest"
     ]
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ]
 }

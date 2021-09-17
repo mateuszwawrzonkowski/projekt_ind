@@ -18,3 +18,7 @@ code {
 .gap-1 {
   gap: 0.4em;
 }
+
+#mapid {
+  height: 180px;
+}

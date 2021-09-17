@@ -30,6 +30,8 @@ const IS_LOGGED_IN = gql`
   }
 `;
 
+const addToCart = (item) => {};
+
 const addTab = (path) => {
   if (tabsVar().includes(path)) return;
   return tabsVar([...tabsVar(), path]);
